@@ -1,0 +1,15 @@
+### 1. Create or get existing our_param (redirect)
+GET http://localhost:3000/?keyword=shoes&src=google&creative=1234
+
+
+### 2. Retrieve original mapping (provide specific our_param)
+GET http://localhost:3000/retrieve_original?our_param=REPLACE_THIS
+
+
+### 3. Retrieve most recent mapping (no param provided)
+GET http://localhost:3000/retrieve_original
+
+
+### 4. Refresh (force new our_param) — requires API key
+POST http://localhost:3000/refresh?keyword=shoes&src=google&creative=1234
+x-api-key: supersecretkey
