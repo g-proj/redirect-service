@@ -1,5 +1,7 @@
 # Redirect Mapping Service
 
+### For verbose documentation please see the file redirect-service-doc.md
+
 A lightweight service that maps incoming traffic source parameters to a stable internal token (`our_param`), supports remapping, and redirects users without exposing source details.
 
 ## Features
